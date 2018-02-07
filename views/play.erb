@@ -5,17 +5,14 @@
   <title></title>
 </head>
 <body>
-  <h1><%= $player_1.name %> and <%= $player_2.name %>, you are doomed!</h1>
-  <h2><%= $player_1.name %>: <%= $player_1.hit_points %> HP</h2>
-  <h2><%= $player_2.name %>: <%= $player_2.hit_points %> HP</h2>
+  <h1><%= $game.player_1.name %> and <%= $game.player_2.name %>, you are doomed!</h1>
+  <h2><%= $game.player_1.name %>: <%= $game.player_1.hit_points %> HP</h2>
+  <h2><%= $game.player_2.name %>: <%= $game.player_2.hit_points %> HP</h2>
 
-  <form action="/attackp2" method="post">
+  <form action="/attack" method="post">
     <div>
       <input type="submit" value="attack p2">
     </div>
   </form>
-<!--   <% if @attackp2 == true %>
-  <h2>attack confirmed</h2>
-  <% end %> -->
 </body>
 </html>

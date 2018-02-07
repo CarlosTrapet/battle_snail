@@ -5,9 +5,9 @@
   <title></title>
 </head>
 <body>
-  <h1><%= @player_1_name %> and <%= @player_2_name %>, you are doomed!</h1>
-  <h2><%= @player_2_name%>: 60 HP</h2>
-  
+  <h1><%= $player_1.name %> and <%= $player_2.name %>, you are doomed!</h1>
+  <h2><%= $player_2.name %>: 60 HP</h2>
+
   <form action="/attackp2" method="post">
     <div>
       <input type="submit" value="attack p2">
